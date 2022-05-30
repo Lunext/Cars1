@@ -38,10 +38,14 @@ namespace Cars.Services
         public AuthenticateResponse Authenticate(AuthenticateRequest model)
         {
             var user = _context.Users.SingleOrDefault(x => x.Username == model.Username);
+            try
+            {
+                // validate
+                if (user == null || !BCrypt.Verify(model.Password, user.PasswordHash))
+                    throw new AppException("Username or password is incorrect");
 
-            // validate
-            if (user == null || !BCrypt.Verify(model.Password, user.PasswordHash))
-                throw new AppException("Username or password is incorrect");
+            }
+            catch {}
 
             // authentication successful
             var response = _mapper.Map<AuthenticateResponse>(user);

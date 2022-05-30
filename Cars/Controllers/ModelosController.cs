@@ -11,7 +11,7 @@ using Cars.Authorization;
 
 namespace Cars.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ModelosController : ControllerBase

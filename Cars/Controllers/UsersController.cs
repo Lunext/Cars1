@@ -9,7 +9,7 @@ using Cars.Models.Users;
 using Cars.Services;
 namespace Cars.Controllers
 {
-    [Authorize]
+   // [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase

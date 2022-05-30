@@ -1,7 +1,10 @@
+using CarUI.Forms;
+
 namespace CarUI
 {
     internal static class Program
     {
+        static public PrincipalForm principalForm; 
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -11,7 +14,8 @@ namespace CarUI
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            principalForm = new PrincipalForm();
+            Application.Run( new LoginForm());
         }
     }
 }

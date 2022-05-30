@@ -279,3 +279,8 @@ C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\refint\CarUI.dll
 C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.pdb
 C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.genruntimeconfig.cache
 C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\ref\CarUI.dll
+C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.BaseForm.resources
+C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.PrincipalForm.resources
+C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.Properties.Resources.resources
+C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.Forms.LoginForm.resources
+C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.Forms.CrearTiposCombustiblesForm.resources
