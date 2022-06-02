@@ -37,7 +37,7 @@ namespace CarUI
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(233, 178);
+            this.dataGridView1.Location = new System.Drawing.Point(204, 118);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
@@ -46,7 +46,7 @@ namespace CarUI
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(877, 138);
+            this.button1.Location = new System.Drawing.Point(879, 78);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 34);
             this.button1.TabIndex = 1;

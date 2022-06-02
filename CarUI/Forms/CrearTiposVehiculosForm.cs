@@ -13,33 +13,28 @@ using System.Windows.Forms;
 
 namespace CarUI.Forms
 {
-    public partial class CrearTiposCombustiblesForm : Form
+    public partial class CrearTiposVehiculosForm : Form
     {
-        public CrearTiposCombustiblesForm()
+        public CrearTiposVehiculosForm()
         {
             InitializeComponent();
         }
 
-        public void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            var tipoCombustible = new TiposCombustibles();
+            var tipoVehiculo = new TiposVehiculos();
             var client = new HttpClient();
             client.DefaultRequestHeaders.Add("Authorization", "Bearer " + TokenStore.Token);
 
-            tipoCombustible.Descripcion = txtDescripcion.Text;
-            tipoCombustible.Estado = chkbEstado.Checked;
-            string json = JsonConvert.SerializeObject(tipoCombustible, Formatting.Indented);
+            tipoVehiculo.Descripcion = txtDescripcion.Text;
+            tipoVehiculo.Estado = chkbEstado.Checked;
+            string json = JsonConvert.SerializeObject(tipoVehiculo, Formatting.Indented);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var response = client.PostAsync("https://localhost:7018/api/TiposCombustibles", content);
+            var response = client.PostAsync("https://localhost:7018/api/TiposVehiculos", content);
             var result = response.Result;
             MessageBox.Show(result.StatusCode.ToString());
             Close();
-        }
-
-        private void TiposCombustiblesForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

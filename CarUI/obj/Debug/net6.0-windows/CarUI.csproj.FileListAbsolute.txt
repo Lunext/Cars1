@@ -284,3 +284,6 @@ C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.PrincipalFo
 C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.Properties.Resources.resources
 C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.Forms.LoginForm.resources
 C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.Forms.CrearTiposCombustiblesForm.resources
+C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.Forms.CrearTiposVehiculosForm.resources
+C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.Forms.CrearMarcasForm.resources
+C:\Users\Ebay\source\repos\Cars\CarUI\obj\Debug\net6.0-windows\CarUI.Forms.CrearModelosForm.resources

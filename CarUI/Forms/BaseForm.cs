@@ -18,13 +18,16 @@ namespace CarUI
     {
         
         private string ApiUrl;
-        private List<ModelType> dataList; 
+        private List<ModelType> dataList;
+        private Form CreateRecordForm;
         
-        public BaseForm(string apiUrl, string title)
+        public BaseForm(string apiUrl, string title, Form createRecordForm)
         {
             InitializeComponent();
             Text = title; 
-            ApiUrl = apiUrl;    
+            ApiUrl = apiUrl;
+            CreateRecordForm = createRecordForm; 
+
             
         }
 
@@ -51,8 +54,17 @@ namespace CarUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var c = new CrearTiposCombustiblesForm();
-            c.ShowDialog();
+            //new CrearTiposCombustiblesForm();
+            /*  switch(c)
+              {
+                  case new CrearTipoCombustiblesForm():
+                      c = new CrearTiposCombustiblesForm();
+                      c.ShowDialog();
+                      MakeDataSet();
+              }*/
+
+            CreateRecordForm.ShowDialog();
+          
             MakeDataSet();
         }
 

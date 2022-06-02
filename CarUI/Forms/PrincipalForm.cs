@@ -42,18 +42,18 @@ namespace CarUI
         {
             InitializeComponent();
 
-            TiposVehiculosForm = new BaseForm<TiposVehiculos>(apiUrl: "https://localhost:7018/api/TiposVehiculos", title: "Tipos de Vehiculos");
-            TiposCombustiblesForm = new BaseForm<TiposCombustibles>(apiUrl: "https://localhost:7018/api/TiposCombustibles", title: "Tipos de Combustibles");
-            MarcasForm = new BaseForm<Marcas>(apiUrl: "https://localhost:7018/api/Marcas", title: "Marcas de los vehiculos");
-            ModelosForm = new BaseForm<Modelos>(apiUrl: "https://localhost:7018/api/Modelos", title: "Modelos de los vehiculos");
-            EmpleadosForm = new BaseForm<Empleados>(apiUrl: "https://localhost:7018/api/Empleados", title: "Empleados");
+            TiposVehiculosForm = new BaseForm<TiposVehiculos>(apiUrl: "https://localhost:7018/api/TiposVehiculos", title: "Tipos de Vehiculos",createRecordForm: new CrearTiposVehiculosForm());
+            TiposCombustiblesForm = new BaseForm<TiposCombustibles>(apiUrl: "https://localhost:7018/api/TiposCombustibles", title: "Tipos de Combustibles", createRecordForm: new CrearTiposCombustiblesForm());
+            MarcasForm = new BaseForm<Marcas>(apiUrl: "https://localhost:7018/api/Marcas", title: "Marcas de los vehiculos", createRecordForm: new CrearMarcasForm());
+            ModelosForm = new BaseForm<Modelos>(apiUrl: "https://localhost:7018/api/Modelos", title: "Modelos de los vehiculos", createRecordForm: new CrearModelosForm());
+          //  EmpleadosForm = new BaseForm<Empleados>(apiUrl: "https://localhost:7018/api/Empleados", title: "Empleados");
             loginForm = new LoginForm();
             OpenChildForm(loginForm);
            OpenChildForm(TiposVehiculosForm);
             OpenChildForm(TiposCombustiblesForm);
             OpenChildForm(MarcasForm);
             OpenChildForm(ModelosForm);
-            OpenChildForm(EmpleadosForm);
+          //  OpenChildForm(EmpleadosForm);
                 }
 
        

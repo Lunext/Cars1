@@ -7,6 +7,15 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\CrearMarcasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CrearModelosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CrearTiposVehiculosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
